@@ -8,13 +8,11 @@
 
 int main() {
 
-	srand(time(0));
+	srand(time(NULL));
 
 	int z, eingabe, i=0;
 
-	z = (int)(10.0*rand() / (RAND_MAX + 1.0));
-
-	printf("%d", z);
+	z = rand() % 10 +1;
 
 	while (i < 4) {
 
